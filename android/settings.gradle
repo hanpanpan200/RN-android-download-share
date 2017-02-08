@@ -1,0 +1,3 @@
+rootProject.name = 'RNAndroidDownloadShare'
+
+include ':app'
