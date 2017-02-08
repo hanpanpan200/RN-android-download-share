@@ -5,6 +5,7 @@ import {
   TouchableOpacity,
   StyleSheet,
 } from 'react-native'
+import Share from 'react-native-share'
 
 import { downloadFile } from './downloadHelper'
 
@@ -24,7 +25,11 @@ export default class Example extends Component {
   }
 
   share = () => {
-
+    const { filePath } = this.state
+    Share.open({
+      message: 'Share a pdf file',
+      url: `file://${filePath}`,
+    }).catch(e => {console.log('share error>>', e)})
   }
 
   renderDownloadedInfo() {
@@ -35,7 +40,7 @@ export default class Example extends Component {
     return (
       <View style={styles.downloadInfoText}>
         <Text>The file has been downloaded to path:</Text>
-        <Text>{this.state.filePath}</Text>
+        <Text style={styles.pathText}>{this.state.filePath}</Text>
       </View>
     )
   }
@@ -82,7 +87,7 @@ const styles = StyleSheet.create({
     padding: 5,
     marginTop: 10,
     marginBottom: 20,
-    backgroundColor: 'red',
+    backgroundColor: 'green',
     width: 150,
     alignItems: 'center',
     borderRadius: 3,    
@@ -104,5 +109,11 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     alignItems: 'center',
     marginBottom: 20,    
+  },
+  pathText: {
+    marginTop: 5,
+    textAlign: 'center',
+    fontSize: 12,
+    color: 'green',
   },
 })

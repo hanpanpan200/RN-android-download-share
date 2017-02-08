@@ -3355,6 +3355,10 @@ react-native-fetch-blob:
     base-64 "0.1.0"
     glob "^7.0.6"
 
+react-native-share:
+  version "1.0.19"
+  resolved "https://registry.yarnpkg.com/react-native-share/-/react-native-share-1.0.19.tgz#82c210efb156175d67ee271efee29ed9cf8e1449"
+
 react-native@^0.41.2:
   version "0.41.2"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.41.2.tgz#c6f486b8450a9909e6fed2dfd2c2af946563bf4f"
