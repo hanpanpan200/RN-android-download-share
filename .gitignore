@@ -52,3 +52,10 @@ android/app/libs
 fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
+
+# VSCode
+.vscode/*
+typings/*
+jsconfig.json
+
+ios/Pods/
