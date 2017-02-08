@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "react": "15.4.2",
-    "react-native": "^0.41.2"
+    "react-native": "^0.41.2",
+    "react-native-fetch-blob": "^0.10.2"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
