@@ -24,4 +24,4 @@ react-native run-android
 ```
 ## What's more 
 
-For more information, please take a look at [my blog](http://hanpanpan200.github.io/2017/02/08/react-native-android-share/)
+For more information, please see [my blog](http://hanpanpan200.github.io/2017/02/08/react-native-android-share/)
